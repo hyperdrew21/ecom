@@ -31,7 +31,7 @@ class Account extends Component {
     renderContent() {
         let jsx;
         if(this.props.navbarLinks) {
-            this.props.navbarLinks.map(link => {
+            this.props.navbarLinks.forEach(link => {
                 if(link.active) {
                     jsx = link.component
                 }

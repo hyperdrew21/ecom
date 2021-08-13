@@ -1,7 +1,17 @@
 .purchase-history {
     // grid-row: content-s/content-e;
     // grid-column: s/e;
-    // &_page-title {
+    &_page-title {
+        border-bottom: 1px solid #ccc;
+    }
+    &_border-bottom {
+        border-bottom: 1px solid #F2F2F2;
+    }
+}
+.purchases {
 
-    // }
+}
+
+.purchase-detail {
+
 }

@@ -1,13 +1,40 @@
 import React, { Component } from "react";
 
+import { connect } from "react-redux";
+import * as actions from "../../actions";
+
+    
+
 class Purchases extends Component {
+
+    componentDidMount() {
+        this.props.fetchUserPurchases();
+    }
+    
     render() {
         const { className } = this.props;
+
         return(        
         <div className={`${className} purchases`}>
-            purchases go here
+            {
+            this.props.purchases.map(purchase => {
+                return  (
+                    <div key={purchase._id} className="purchases_purchase">
+                        <img className="purchases_img" src="http://via.placeholder.com/80x80"/>
+                    </div>
+                )
+            })
+        }
         </div>
         )
     }
 }
+
+function mapStateToProps(state) {
+    const { purchases } = state.user;
+    return { purchases };
+}
+
+Purchases = connect(mapStateToProps, actions)(Purchases);
+
 export default Purchases;

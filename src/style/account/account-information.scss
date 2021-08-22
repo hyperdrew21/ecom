@@ -9,7 +9,7 @@
     &_form {
        
         display: grid;
-        grid-template-rows: [name-s street-address -s] 64px [name-e street-address-e email-s city-s] 64px [email-e city-e state-s zipcode-s] 64px [state-e zipcode-e];
+        grid-template-rows: [name-s street-address -s] 64px [name-e street-address-e email-s city-s] 64px [email-e city-e state-s zipcode-s] 64px [state-e zipcode-e change-password-s current-s] 64px [change-password-e current-e new-s] 64px [new-e confirm-s] 64px [confirm-e];
         grid-template-columns: [s] 1fr [m] 1fr [e];
         grid-row-gap: 15px;
     }
@@ -49,8 +49,26 @@
             width: 200px;
         }
     }
-    &_change-password {
-        transform: translateY(38px);
+    &_change-password,
+    &_current {
+        grid-column: s/m;
+        grid-row: change-password-s/change-password-e;
+        transform: translateY(-38px);
+    }
+
+    &_new {
+        grid-row: new-s/new-e;
+       
+    }
+
+    &_confirm {
+        grid-row: confirm-s/confirm-e;
+        
+    }
+
+    &_new,
+    &_confirm {
+        transform: translateY(-25px);
     }
    
 }

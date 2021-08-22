@@ -78,11 +78,25 @@ class AccountInformationForm extends Component {
                 name="new"
                 component={FormInput}/>,
                 <Field key={2} className="account-information-form_confirm" 
-                type="oassword"
+                type="password"
                 title="Confirm Password"
                 placeholder="Confirm Password" 
                 name="confirm"
-                component={FormInput}/>
+                component={FormInput}/>,
+                <div key={3} className="account-information-form_line"></div>,
+                <Field  key={4}className="account-information-form_update-information" 
+                onClick={() => this.setState({ showPasswords: false})}
+                type="submit"
+                title="Update Information" 
+                name="update-information"
+                component={FormButton}/>,
+                <Field key={5} className="account-information-form_cancel" 
+                onClick={() => this.setState({ showPasswords: false})}
+                type="button"
+                title="Cancel" 
+                name="cancel"
+                short={true}
+                component={FormButton}/>
                 ]
                 :
                 <Field className="account-information-form_change-password" 

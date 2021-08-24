@@ -18,7 +18,7 @@ class ShopProduct extends Component {
                 
                 <Quantity className="shop-product_quantity" quantity={1}/>
                 <div className="shop-product_add-to-cart">
-                    add to cart
+                    Add to Cart
                 </div>
             </div>
             )

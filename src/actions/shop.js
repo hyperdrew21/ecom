@@ -1,57 +1,71 @@
 import { 
-    // SET_SHOP_CATEGORIES
+    SET_SHOP_CATEGORIES,
     SET_NAVBAR_LINKS,
-    SET_SHOP_PRODUCTS
+    SET_SHOP_PRODUCTS,
+    FILTER_PRODUCTS_WITH_CATEGORY_ID
 } from "./types";
 
-export function fetchShopCategories() {
+export function filterProductsWithCategoryId(_id) {
     return ({
-        type: SET_NAVBAR_LINKS,
+        type: FILTER_PRODUCTS_WITH_CATEGORY_ID,
+        payload: _id
+    })
+}
+
+export function fetchShopCategories() {
+    
+    return ({
+        type: SET_SHOP_CATEGORIES,
         payload: [
-            {
-
-            _id: 0,
-            title: "All"
-
-            },
-            {
-
-                _id: 1,
-                title: "JavaScript"
-    
-            },
-            {
-
-                _id: 2,
-                title: "UX/UI"
-    
-            },
-            {
-
-                _id: 3,
-                title: "Linux"
-        
-            },
-            {
-
-                _id: 4,
-                title: "Python"
-    
-            },
-            {
-
-                _id: 5,
-                title: "UML"
-    
-            },
-            {
-
-                _id: 6,
-                title: "Ruby"
-    
-            }
             
-        ]
+                    {
+
+                    _id: 0,
+                    title: "All"
+                    
+        
+                    },
+                    {
+        
+                        _id: 1,
+                        title: "JavaScript"
+            
+                    },
+                    {
+        
+                        _id: 2,
+                        title: "UX/UI"
+            
+                    },
+                    {
+        
+                        _id: 3,
+                        title: "Linux"
+                
+                    },
+                    {
+        
+                        _id: 4,
+                        title: "Python"
+            
+                    },
+                    {
+        
+                        _id: 5,
+                        title: "UML"
+            
+                    },
+                    {
+        
+                        _id: 6,
+                        title: "Ruby"
+            
+                    }
+                    
+                ]
+             
+            
+           
     })    
 }
 

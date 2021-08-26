@@ -7,18 +7,26 @@ class ShopProduct extends Component {
         const { _id, title, description, price } = this.props;
         return (
             <div className="shop-product">
-                <div className="shop-product_title">
+                <div className="shop-product_front">
+                    <img className="shop-product_front_image" src="http://via.placeholder.com/220x220"/>
+                </div>
+                <div className="shop-product_front_title">
                     {title}
                 </div>
-                <div className ="shop-product_description">
-                    {description}
-                </div>
-                <GreenPriceTag className="shop-product_price" title={price}/>
+                <div className="shop-product_back">
+                    <div className="shop-product_back_title">
+                        {title}
+                    </div>
+                    <div className ="shop-product_back_description">
+                        {description}
+                    </div>
+                    <GreenPriceTag className="shop-product_back_price" title={price}/>
+                        
                     
-                
-                <Quantity className="shop-product_quantity" quantity={1}/>
-                <div className="shop-product_add-to-cart">
-                    Add to Cart
+                    <Quantity className="shop-product_back_quantity" quantity={1}/>
+                    <div className="shop-product_back_add-to-cart">
+                        Add to Cart
+                    </div>
                 </div>
             </div>
             )

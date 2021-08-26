@@ -16,10 +16,10 @@ function CartContent({className, products}) {
             <div className="cart-content_title">
                 Cart ({count})
             </div>
-            <div className="cart-content_product">
+            <div className="cart-content_products">
                 {productsJSX}
             </div>
-            <CartFooter className="cart-footer_footer" products={products} />
+            <CartFooter className="cart-content_footer" products={products} />
         </div>
         )
 }
@@ -47,7 +47,7 @@ class ShopCart extends Component {
         return(
             <div className={`${className} shop-cart`}>
                 <CartButton className="shop-cart_toggle" icon="fas fa-times"/>
-                <CartContent className="shop-cart_content" products={[4]}/>
+                <CartContent className="shop-cart_content" products={[4,45,98,23,546,674,234,124,904,934,801]}/>
             </div>
             )
     }

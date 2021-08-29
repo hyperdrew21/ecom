@@ -23,7 +23,7 @@ class ReviewForm extends Component {
                 name="proceed"
                 component={FormButton}/>
                 <Field className="review-form_back" 
-                onClick={() => history.push('/signin')}
+                onClick={() => history.push('/shop')}
                 type="button"
                 title="Back" 
                 name="back"

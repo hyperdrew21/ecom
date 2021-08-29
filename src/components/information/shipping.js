@@ -7,6 +7,8 @@ import PageTitle from "../pageTitle";
 import { connect } from "react-redux";
 import * as actions from "../../actions";
 
+import ShippingForm from "./shippingForm";
+
 
 class Shipping extends Component {
 
@@ -20,9 +22,9 @@ class Shipping extends Component {
     }
     render() {
         return(
-            <div className="sign-in">
-                <PageTitle className="sign-in_page-title" title="Shipping Address"/>
-                {/* <ShippingForm onSubmit={this.onSubmit} className="sign-in_form" />  */}
+            <div className="shipping">
+                <PageTitle className="shipping_page-title" title="Shipping Address"/>
+                <ShippingForm onSubmit={this.onSubmit} className="shipping_form" /> 
             </div>
             )
     }

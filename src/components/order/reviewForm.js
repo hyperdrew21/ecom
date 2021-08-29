@@ -34,7 +34,25 @@ class ReviewForm extends Component {
                 name="back"
                 short={true}
                 component={FormButton}/>
-                
+                <div className="review-form_details review-details">
+                    <div className="review-details_subtotal review-detail">
+                        <div className="review-detail_title">Subtotal</div>
+                        <div className="review-detail_price">$7.96</div>
+                    </div> 
+                    <div className="review-details_subtotal review-detail">
+                        <div className="review-detail_title">Tax</div>
+                        <div className="review-detail_price">$0.16</div>
+                    </div>
+                    <div className="review-details_subtotal review-detail">
+                        <div className="review-detail_title">Shipping</div>
+                        <div className="review-detail_price">$0.00</div>
+                    </div>
+                    <div className="review-details_total review-detail review-detail-green">
+                        <div className="review-detail-green_title">Total</div>
+                        <div className="review-detail-green_price">$8.12</div>
+                    </div>
+
+                </div>
             </form>
         )
     }

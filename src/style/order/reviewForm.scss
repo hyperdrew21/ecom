@@ -4,6 +4,7 @@
     &_products {
         grid-column: 1/-1;
         grid-row: products-s/products-e;
+        overflow-Y: scroll;
     }
     &_line {
         grid-column: 1/-1;

@@ -87,7 +87,8 @@ export function fetchShopProducts() {
                 title: "Javascript in the Browser",
                 description: "'The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal.'",
                 price: "1.99",
-                belongsTo: [0, 1]
+                belongsTo: [0, 1],
+                imageUrl: "http://via.placeholder.com/80x80"
             },
             {
 
@@ -95,7 +96,8 @@ export function fetchShopProducts() {
                 title: "Graph Database",
                 description: "'The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal.'",
                 price: "1.99",
-                belongsTo: [0, 6]
+                belongsTo: [0, 6],
+                imageUrl: "http://via.placeholder.com/80x80"
     
             },
             {
@@ -104,7 +106,8 @@ export function fetchShopProducts() {
                 title: "Full Stack Development",
                 description: "'The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal.'",
                 price: "1.99",
-                belongsTo: [0, 1, 4]
+                belongsTo: [0, 1, 4],
+                imageUrl: "http://via.placeholder.com/80x80"
     
             },
             {
@@ -113,7 +116,8 @@ export function fetchShopProducts() {
                 title: "User Interface Design",
                 description: "'The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal.'",
                 price: "1.99",
-                belongsTo: [0, 2]
+                belongsTo: [0, 2],
+                imageUrl: "http://via.placeholder.com/80x80"
         
             },
             {
@@ -122,7 +126,8 @@ export function fetchShopProducts() {
                 title: "Javascript Development",
                 description: "'The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal.'",
                 price: "1.99",
-                belongsTo: [0, 1]
+                belongsTo: [0, 1],
+                imageUrl: "http://via.placeholder.com/80x80"
     
             },
             {
@@ -131,7 +136,8 @@ export function fetchShopProducts() {
                 title: "User Experience Design",
                 description: "'The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal.'",
                 price: "1.99",
-                belongsTo: [0, 2]
+                belongsTo: [0, 2],
+                imageUrl: "http://via.placeholder.com/80x80"
     
             },
             {
@@ -140,7 +146,8 @@ export function fetchShopProducts() {
                 title: "Advanced OOP",
                 description: "'The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal.'",
                 price: "1.99",
-                belongsTo: [0, 6]
+                belongsTo: [0, 6],
+                imageUrl: "http://via.placeholder.com/80x80"
     
             }
             

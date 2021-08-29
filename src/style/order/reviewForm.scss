@@ -1,5 +1,4 @@
 .review-form {
-
     &_legend {
         grid-row: legend-s/legend-e;
         grid-column: 1/-1;
@@ -7,8 +6,6 @@
         border-bottom: 1px solid #ccc;
         padding-bottom: 11px;
     }
-    
-
     &_products {
         grid-column: 1/-1;
         grid-row: products-s/products-e;
@@ -22,7 +19,6 @@
     }
     &_line {
         grid-column: 1/-1;
-
         grid-row: line-s/line-e;
         border-top: 1px solid #ccc;
         margin-bottom: 24px
@@ -42,10 +38,7 @@
         align-self: end;
         transform: translateX(-40px) translateY(60px);
     }
-
 }
-
-
 
 // .review-details{
 //     &_shipping {

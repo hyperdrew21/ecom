@@ -11,10 +11,10 @@ export function UnderlinedTitle({ className, title }) {
 export function InfoTitle({ className, title, value }) {
     return (
         <div className={`${className} info-title`}>
-            <div className='info-title__title'>
+            <div className='info-title_title'>
                 {title}
             </div>
-            <div className='info-title__value'>
+            <div className='info-title_value'>
                 {value}
             </div>
         </div>

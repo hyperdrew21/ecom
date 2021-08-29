@@ -45,4 +45,9 @@
         grid-row: buttons-s/buttons-e;
         grid-column: use-this-address-s/use-this-address-e;
     }
+    &_order-summary {
+        grid-row: name-s;
+        grid-column: use-this-address-e;
+        justify-self: end;
+    }
 }

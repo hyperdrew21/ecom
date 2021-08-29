@@ -1,0 +1,52 @@
+.payment {
+    grid-row: content-s/content-e;
+    grid-column: s/e;
+
+    &_form {
+        display: grid;
+        grid-template-rows: [name-s] 64px [name-e card-s] 64px [card-e expiration-ccv-s] 64px [expiration-ccv-e] minmax(20px, 81px) [line-s] 26px [line-e buttons-s] 38px [buttons-e];
+        grid-template-columns: [back-s] 137px [back-e space-s] 40px [space-e pay-complete-s] 1fr [pay-complete-e] 1fr;
+        grid-row-gap: 15px;
+    }
+}
+
+.payment-form {
+    &_name {
+        grid-row: name-s/name-e;
+    }
+    &_card {
+        grid-row: card-s/card-e;
+    }
+    &_expiration,
+    &_ccv {
+        grid-row: expiration-ccv-s/expiration-ccv-e;
+        grid-column: back-s;
+        input {
+            width: 200px;
+        }
+       
+
+    }
+    &_ccv {
+        transform: translateX(226px);
+    }
+    &_line {
+        grid-row: line-s/line-e;
+        grid-column: 1/-1;
+        border-top: 1px solid #ccc;
+        margin-bottom: 24px;
+    }
+    &_back {
+        grid-row: buttons-s/buttons-e;
+        grid-column: back-s/back-e;
+    }
+    &_pay-complete {
+        grid-row: buttons-s/buttons-e;
+        grid-column: pay-complete-s/pay-complete-e;
+    }
+    &_order-summary {
+        grid-row: name-s;
+        grid-column: pay-complete-s/-1;
+        justify-self: end;
+    }
+}

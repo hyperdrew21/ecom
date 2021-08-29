@@ -6,61 +6,53 @@ import { FormInput, FormButton } from '../formFields';
 
 
 import history from "../../history";
+import OrderSummary from "./orderSummary";
 
 class PaymentForm extends Component {
     render() {
         const { className, handleSubmit } = this.props;
        
         return (
-            <form onSubmit={handleSubmit} className={`${className} shipping-form`}>
-                <Field className="shipping-form_name" 
+            <form onSubmit={handleSubmit} className={`${className} payment-form`}>
+                <Field className="payment-form_name" 
                 type="name"
-                title="Name"
+                title="Name on Card"
                 placeholder="Name" 
                 name="name"
                 component={FormInput}/>
-                 <Field className="shipping-form_address" 
-                type="address"
-                title="Street Address"
-                placeholder="Street Address" 
-                name="address"
+                 <Field className="payment-form_card" 
+                type="card"
+                title=" Credit Card Number"
+                placeholder=" ____-____-____-____" 
+                name="card"
                 component={FormInput}/>
-                <Field className="shipping-form_city" 
-                type="city"
-                title="City"
-                placeholder="City" 
-                name="city"
+                <Field className="payment-form_expiration" 
+                type="expiration"
+                title="Expiration Date"
+                placeholder="Expiration" 
+                name="expiration"
                 component={FormInput}/>
-                 <Field className="shipping-form_state" 
-                type="state"
-                title="State"
-                placeholder="State" 
-                name="state"
+                <Field className="payment-form_ccv" 
+                type="ccv"
+                title="CCV"
+                placeholder="CCV" 
+                name="ccv"
                 component={FormInput}/>
-                 <Field className="shipping-form_zipcode" 
-                type="zipcode"
-                title="Zipcode"
-                placeholder="Zipcode" 
-                name="zipcode"
-                component={FormInput}/>
-                
-                
-
-                <div className="shipping-form_line"></div>
-                <Field className="shipping-form_use-this-address" 
+                <div className="payment-form_line"></div>
+                <Field className="payment-form_pay-complete" 
                 onClick={() => history.push('/information/payment')}
                 type="submit"
-                title="Use This Address" 
-                name="use-this-address"
+                title="Pay & Complete" 
+                name="pay-complete"
                 component={FormButton}/>
-                <Field className="shipping-form_back" 
+                <Field className="payment-form_back" 
                 onClick={() => history.push('/signin')}
                 type="button"
                 title="Back" 
                 name="back"
                 short={true}
                 component={FormButton}/>
-                
+                <OrderSummary className='payment-form_order-summary'/>
             </form>
         )
     }
